@@ -1,3 +1,8 @@
+:root {
+    --primary: red ;
+    --fontcolor:rgba(255, 255, 255, 0.7)
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -16,7 +21,7 @@ body {
         background-image: linear-gradient(65deg, rgba(0, 0, 0, 0.9000) 30.00%, rgba(0, 0, 0, 0.8965) 35.83%, rgba(0, 0, 0, 0.8861) 41.67%, rgba(0, 0, 0, 0.8688) 47.50%, rgba(0, 0, 0, 0.8444) 53.33%, rgba(0, 0, 0, 0.8132) 59.17%, rgba(0, 0, 0, 0.7750) 65.00%, rgba(0, 0, 0, 0.7368) 70.83%, rgba(0, 0, 0, 0.7056) 76.67%, rgba(0, 0, 0, 0.6813) 82.50%, rgba(0, 0, 0, 0.6639) 88.33%, rgba(0, 0, 0, 0.6535) 94.17%, rgba(0, 0, 0, 0.6500) 100.0%), url(asset/images/bg.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: max(1000px, 100vw);
+        background-size: max(1100px, 100vw);
         height: auto;
         top: 0;
         width: auto;
@@ -25,18 +30,18 @@ body {
 
 
     .nav {
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 25px;
+        margin-right: 25px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         align-items: center;
         position: relative;
-        padding-top: 10px;
+        padding-top: 25px;
     }
 
     .logo {
-        width: 40px;
+        width: 90px;
         color: red;
     }
 
@@ -48,55 +53,58 @@ body {
     }
 
     .nav-button1 {
-        margin-left: 3%;
+        margin-left: ;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 2px;
+        border-radius: 0.1875rem;
+        padding: 2px;
         border: 0px;
         background-color: rgb(0, 0, 0, 0.5);
         border: 0.5px solid rgba(255, 255, 255, 0.705);
         color: white;
         font-size: 5px;
         font-weight: bold;
-        height: 15px;
+        height: 32px;
     }
 
     .nav-button1 img {
 
         margin-left: 5px;
-        height: 11px;
+        height: 15px;
     }
 
     .nav-button2 {
+        width: 80px;
         margin-left: 3%;
-        width: 40px;
-        height: 15px;
+        padding: 2px;
+        height: 32px;
         border: 0;
-        border-radius: 2px;
+        border-radius: 0.1875rem;
         background-color: red;
         color: white;
-        font-size: 6px;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .mainchild {
-        margin-left: 10px;
-        margin-top: 80px;
+        margin-left: 25px;
+        margin-top: 182px;
     }
 
     .mainchild p:nth-child(1) {
-        font-size: 15px;
+        font-size: 2rem;
         position: relative;
+        line-height: 1.5;
         z-index: 10;
         color: white;
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-        font-weight: 900;
+        font-weight: 700;
     }
 
     .mainchild p:nth-child(2) {
         color: white;
-        font-size: 8px;
+        font-size: 1rem;
         font-weight: 400;
         position: relative;
         z-index: 10;
@@ -105,50 +113,58 @@ body {
     }
 
     .mainchild2 {
-        margin-left: 10px;
+        margin-left: 25px;
         margin-top: 10px;
+        margin-right: 25px;
         position: relative;
         z-index: 10;
     }
 
     .mainchild2 p {
-        color: white;
+        line-height: 1.6;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.596);
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-        font-size: 8px;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .mainchild2 div {
-        margin-top: 10px;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
     }
 
     .mainchild2 div input {
-        width: 80%;
-        line-height: 1.5;
+        width: auto;
         background-color: rgba(0, 0, 0, 0.315);
         border: 1px solid gray;
         border-radius: 4px;
-        padding: 6px;
-        font-size: 8px;
+        padding: 17px;
+        font-size: 15px;
         color: white;
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 
     }
 
     .mainchild2 div input::placeholder {
-        color: rgba(255, 255, 255, 0.63);
+        color: var(--fontcolor);
     }
 
     .mainchild2 div button {
-        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
         margin-top: 10px;
         line-height: 1.5;
         background-color: red;
         border-radius: 4px;
         align-items: center;
         border: 1px solid rgb(255, 0, 0);
-        padding: 6px;
+        padding: 10px;
         color: white;
-        font-size: 8px;
+        font-size: 1.125rem;
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
         font-weight: 700;
 
@@ -170,10 +186,11 @@ body {
     }
 
     .main-footer {
+
         box-sizing: border-box;
-        max-width: 100%;
+        max-width: 1000px;
         height: 20px;
-        margin-top: 30px;
+        margin-top: 40px;
         background-color: red;
         border: 5px solid red;
         border-top-left-radius: 50% 100%;
@@ -185,8 +202,14 @@ body {
     }
 
     .content {
-        margin: 50px 10px;
+        margin: 0px 25px;
+        margin-top: 50px;
 
+    }
+
+    .content div h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
     }
 
     .card {
@@ -204,12 +227,13 @@ body {
                 #210e17 99.08%);
         border: 0px;
         border-radius: 10px;
-        padding: 20px 15px;
-        height: 270px;
-        width: 215px;
+        padding: 15px 20px;
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
 
     .card-style div:nth-child(1) {
@@ -219,8 +243,8 @@ body {
 
     .card-style h3 {
         color: gray;
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 1.2em;
+        font-weight: 500;
         margin-top: 10px;
         line-height: 1.2;
 
@@ -239,26 +263,30 @@ body {
 
 
     .questions {
-        margin-top: 50px;
-        margin-left: 10px;
-        margin-bottom: 20px;
+        margin: 25px;
     }
 
     .questions h2 {
-        font-size: 8px;
+        font-size: 1.125rem;
+        font-weight: 700;
 
     }
 
     .getquestions {
-        width: 67%;
+        width: auto;
         background-color: rgba(173, 173, 173, 0.288);
-        padding: 0px 1.9%;
-        font-size: 9px;
+        font-size: 18px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 3px;
-        height: 35px;
+        margin-top: 11px;
+        height: 71px;
+        padding: 0px 30px;
+
+    }
+
+    .getquestions img {
+        width: 25px;
     }
 
     .questions h2 {
@@ -268,46 +296,50 @@ body {
 
     .questions-style {
         display: none;
-        width: 67%;
+        width: auto;
         background-color: rgba(173, 173, 173, 0.288);
         padding: 5px 1.9%;
-        font-size: 8px;
+        font-size: 18px;
         display: flex;
         align-items: center;
         margin-top: 1px;
+        padding: 28px 28px;
+
     }
 
     .questions-plus {
         background-color: transparent;
         border: none;
+        width: 10px;
     }
 
     .getstarted {
-        margin-left: 10px;
+        margin: 40px 25px;
     }
 
     .getstarted div {
         margin-top: 20px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
 
 
     .getstarted p {
         color: rgb(175, 174, 174);
-        font-size: 18px;
+        font-size: 1rem;
         margin-bottom: 18px;
+        line-height: 1.5;
     }
 
     .getstarted div input {
-        width: 62%;
+        width: auto;
         line-height: 1.5;
-        background-color: rgba(0, 0, 0, 0.459);
+        background-color: rgba(0, 0, 0, 0.384);
         border: 1px solid gray;
         border-radius: 4px;
-        height: 54px;
+        height: 45px;
         padding: 0px 18px;
-        font-size: 18px;
+        font-size: 17px;
         color: white;
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 
@@ -316,22 +348,27 @@ body {
 
 
     .getstarted div button {
-        width: 18%;
-        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: inherit;
+        width: 50%;
+        margin-top: 15px;
         line-height: 1.5;
         background-color: red;
         border: none;
         border-radius: 4px;
-        height: 55px;
-        font-size: 25px;
+        height: 47px;
+        font-size: 1.125rem;
         color: white;
+        margin-left: 0;
         font-weight: 500;
         font-family: "Netflix San   s", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     }
 
     .footer {
-        margin-left: 180px;
-        margin-top: 70px;
+        margin-left: 50px;
+        margin-top: 0px;
     }
 
     .footer p {
@@ -344,20 +381,53 @@ body {
         gap: 15px;
         font-size: 14px;
         font-weight: 300;
-        color: rgba(255, 255, 255, 0.479);
+        text-decoration-color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .fmd {
+        gap: 15px;
         width: 72%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         margin-bottom: 50px;
     }
 
     .footerni {
         margin-top: 40px;
-        margin-left: 170px;
+        margin-left: 50px;
         margin-bottom: 100px;
+        font-size: 14px;
+    }
+
+    .footerni p {
+        color: var(--fontcolor);
+        font-weight: 400;
+
+    }
+
+    .footer-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.1875rem;
+        padding: 1px 15px;
+        border: 0px;
+        background-color: rgb(0, 0, 0, 0.5);
+        border: 0.5px solid rgba(255, 255, 255, 0.705);
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        height: 32px;
+    }
+
+    .footer-button select {
+        margin-left: 5px;
+        background-color: transparent;
+        border: 0px;
+        font-size: 15px;
+
+
     }
 }
