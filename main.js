@@ -18,3 +18,9 @@ function faqView(questionClass,btnClass){
         div.style.display = "block";
     }
 }
+
+$('#trans').click(function() {
+    google.language.translate($('#some').html(), 'en', 'fr', function(result) {
+        $('#some').html(result.translation);
+    });
+  });
